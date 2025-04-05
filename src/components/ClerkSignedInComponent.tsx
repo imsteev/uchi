@@ -38,7 +38,6 @@ export default function ClerkSignedInComponent() {
   if (user) {
     return (
       <div>
-        <p>Signed in with Instant through Clerk!</p>{" "}
         <button
           onClick={() => {
             // First sign out of Instant to clear the Instant session.
