@@ -36,7 +36,7 @@ export default function Notes() {
 
   const onCloseImageDialog = () => {
     dialogRef.current?.close();
-    setDialogOpen(false);
+    setImageDialogOpen(false);
     setText("");
   };
 
