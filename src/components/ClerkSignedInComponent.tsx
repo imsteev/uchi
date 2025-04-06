@@ -18,7 +18,7 @@ export default function ClerkSignedInComponent() {
     // It will look up the user by email or create a new user with
     // the email address in the session token.
     db.auth.signInWithIdToken({
-      clientName: VITE_INSTANT_CLERK_CLIENT_ID,
+      clientName: import.meta.env.VITE_INSTANT_CLERK_CLIENT_ID,
       idToken: idToken,
     });
   };
