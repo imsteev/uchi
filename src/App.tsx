@@ -1,19 +1,16 @@
-import {
-  SignedOut,
-  SignInButton,
-  SignedIn,
-  UserButton,
-} from "@clerk/clerk-react";
+import { SignedIn } from "@clerk/clerk-react";
+import ClerkSignedInComponent from "./components/ClerkSignedInComponent";
+import Header from "./components/Header";
+import Notes from "./components/notes";
 
 export default function App() {
   return (
-    <header>
-      <SignedOut>
-        <SignInButton />
-      </SignedOut>
+    <div className="App">
+      <Header />
       <SignedIn>
-        <UserButton />
+        <ClerkSignedInComponent />
+        <Notes />
       </SignedIn>
-    </header>
+    </div>
   );
 }
