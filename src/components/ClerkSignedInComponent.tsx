@@ -52,11 +52,6 @@ export default function ClerkSignedInComponent() {
       </div>
     );
   }
-  return (
-    <div>
-      <button onClick={signInToInstantWithClerkToken}>
-        Sign in to Instant
-      </button>
-    </div>
-  );
+
+  return null;
 }
